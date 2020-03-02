@@ -16,6 +16,7 @@ class MainPresentator: Presentator {
   private var currentNumber = -2
   private var currentEntry = ""
   private var stillErrors = false
+  private weak var presentable: Presentable?
   
   init() {
     errorMessage = Dynamic("")
@@ -34,7 +35,8 @@ class MainPresentator: Presentator {
   }
   
   func start(presentable view: Presentable) {
-    view.setup(presenter: self)
+    presentable = view
+    presentable?.setup(presenter: self)
   }
   
   //MARK:- Protocol Methods

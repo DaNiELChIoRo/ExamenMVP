@@ -17,7 +17,7 @@ protocol Presentator {
   func processSequence(_ sequence: String)
 }
 
-protocol Presentable {
+protocol Presentable: NSObjectProtocol {
   func setup(presenter: Presentator)
 }
 
