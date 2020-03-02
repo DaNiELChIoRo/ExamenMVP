@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Presentable {
   
   @IBOutlet weak var textField: CustomTextField!
   @IBOutlet weak var wrongEntryLabel: UILabel!
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     setupBinds()
   }
   
-  func setup(presentator: Presentator) {
+  func setup(presenter presentator: Presentator) {
     self.presenter = presentator
   }
   
@@ -76,20 +76,4 @@ class ViewController: UIViewController {
     wrongEntryLabel.alpha = 0
     processedSequenceLabel.alpha = 1
   }
-}
-
-class CustomTextField: UITextField {
- 
-  required init(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)!
-  }
-  
-  override init(frame: CGRect) {
-    super.init(frame: frame)
-  }
-  
-  override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-    return false
-  }
-  
 }

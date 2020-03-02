@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		E1E19FB4240C00A9003CAA84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FB3240C00A9003CAA84 /* AppDelegate.swift */; };
-		E1E19FB6240C00A9003CAA84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FB5240C00A9003CAA84 /* SceneDelegate.swift */; };
 		E1E19FB8240C00A9003CAA84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FB7240C00A9003CAA84 /* ViewController.swift */; };
 		E1E19FBB240C00A9003CAA84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E19FB9240C00A9003CAA84 /* Main.storyboard */; };
 		E1E19FBD240C00AB003CAA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E19FBC240C00AB003CAA84 /* Assets.xcassets */; };
 		E1E19FC0240C00AB003CAA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E19FBE240C00AB003CAA84 /* LaunchScreen.storyboard */; };
 		E1E19FCB240C00AB003CAA84 /* ExamenMVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FCA240C00AB003CAA84 /* ExamenMVPTests.swift */; };
 		E1E19FD6240C00AB003CAA84 /* ExamenMVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FD5240C00AB003CAA84 /* ExamenMVPUITests.swift */; };
+		E1E19FE4240C0221003CAA84 /* MainPresentator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FE3240C0221003CAA84 /* MainPresentator.swift */; };
+		E1E19FE6240C0330003CAA84 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FE5240C0330003CAA84 /* Protocols.swift */; };
+		E1E19FEA240C1024003CAA84 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FE9240C1024003CAA84 /* UITextField+Extension.swift */; };
+		E1E19FEC240C3F8C003CAA84 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FEB240C3F8C003CAA84 /* String+Extension.swift */; };
+		E1E19FEE240C3FC7003CAA84 /* Device+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FED240C3FC7003CAA84 /* Device+Extension.swift */; };
+		E1E19FF0240C43DC003CAA84 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FEF240C43DC003CAA84 /* Dynamic.swift */; };
+		E1E19FF7240D332C003CAA84 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E19FF6240D332C003CAA84 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,6 @@
 /* Begin PBXFileReference section */
 		E1E19FB0240C00A9003CAA84 /* ExamenMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E19FB3240C00A9003CAA84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1E19FB5240C00A9003CAA84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E1E19FB7240C00A9003CAA84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1E19FBA240C00A9003CAA84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1E19FBC240C00AB003CAA84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		E1E19FD1240C00AB003CAA84 /* ExamenMVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExamenMVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E19FD5240C00AB003CAA84 /* ExamenMVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamenMVPUITests.swift; sourceTree = "<group>"; };
 		E1E19FD7240C00AB003CAA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E19FE3240C0221003CAA84 /* MainPresentator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresentator.swift; sourceTree = "<group>"; };
+		E1E19FE5240C0330003CAA84 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		E1E19FE9240C1024003CAA84 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		E1E19FEB240C3F8C003CAA84 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E1E19FED240C3FC7003CAA84 /* Device+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+Extension.swift"; sourceTree = "<group>"; };
+		E1E19FEF240C43DC003CAA84 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		E1E19FF6240D332C003CAA84 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +111,9 @@
 		E1E19FB2240C00A9003CAA84 /* ExamenMVP */ = {
 			isa = PBXGroup;
 			children = (
-				E1E19FB3240C00A9003CAA84 /* AppDelegate.swift */,
-				E1E19FB5240C00A9003CAA84 /* SceneDelegate.swift */,
-				E1E19FB7240C00A9003CAA84 /* ViewController.swift */,
-				E1E19FB9240C00A9003CAA84 /* Main.storyboard */,
-				E1E19FBC240C00AB003CAA84 /* Assets.xcassets */,
+				E1E19FE8240C1018003CAA84 /* Helpers */,
+				E1E19FE7240C0FFF003CAA84 /* Supporting Files */,
+				E1E19FF1240D32BD003CAA84 /* Main */,
 				E1E19FBE240C00AB003CAA84 /* LaunchScreen.storyboard */,
 				E1E19FC1240C00AB003CAA84 /* Info.plist */,
 			);
@@ -126,6 +136,86 @@
 				E1E19FD7240C00AB003CAA84 /* Info.plist */,
 			);
 			path = ExamenMVPUITests;
+			sourceTree = "<group>";
+		};
+		E1E19FE7240C0FFF003CAA84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1E19FBC240C00AB003CAA84 /* Assets.xcassets */,
+				E1E19FB3240C00A9003CAA84 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1E19FE8240C1018003CAA84 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E1E19FF9240D3365003CAA84 /* CustomViews */,
+				E1E19FF8240D3347003CAA84 /* Extensions */,
+				E1E19FEF240C43DC003CAA84 /* Dynamic.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E1E19FF1240D32BD003CAA84 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E1E19FF4240D3300003CAA84 /* Protocols */,
+				E1E19FF2240D32D6003CAA84 /* Presenter */,
+				E1E19FF3240D32EA003CAA84 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E1E19FF2240D32D6003CAA84 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E1E19FE3240C0221003CAA84 /* MainPresentator.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E1E19FF3240D32EA003CAA84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1E19FF5240D330F003CAA84 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1E19FF4240D3300003CAA84 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E1E19FE5240C0330003CAA84 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E1E19FF5240D330F003CAA84 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E1E19FB9240C00A9003CAA84 /* Main.storyboard */,
+				E1E19FB7240C00A9003CAA84 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E1E19FF8240D3347003CAA84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E1E19FED240C3FC7003CAA84 /* Device+Extension.swift */,
+				E1E19FEB240C3F8C003CAA84 /* String+Extension.swift */,
+				E1E19FE9240C1024003CAA84 /* UITextField+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E1E19FF9240D3365003CAA84 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E1E19FF6240D332C003CAA84 /* CustomTextField.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +349,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E19FE6240C0330003CAA84 /* Protocols.swift in Sources */,
+				E1E19FEE240C3FC7003CAA84 /* Device+Extension.swift in Sources */,
+				E1E19FE4240C0221003CAA84 /* MainPresentator.swift in Sources */,
+				E1E19FF0240C43DC003CAA84 /* Dynamic.swift in Sources */,
+				E1E19FF7240D332C003CAA84 /* CustomTextField.swift in Sources */,
+				E1E19FEC240C3F8C003CAA84 /* String+Extension.swift in Sources */,
+				E1E19FEA240C1024003CAA84 /* UITextField+Extension.swift in Sources */,
 				E1E19FB8240C00A9003CAA84 /* ViewController.swift in Sources */,
 				E1E19FB4240C00A9003CAA84 /* AppDelegate.swift in Sources */,
-				E1E19FB6240C00A9003CAA84 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PZGF8G36GD;
 				INFOPLIST_FILE = ExamenMVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PZGF8G36GD;
 				INFOPLIST_FILE = ExamenMVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -21,14 +21,3 @@ protocol Presentable {
   func setup(presenter: Presentator)
 }
 
-protocol Storyboarded {
-  func instantiate(fromStoryboard nibName: String) -> Self
-}
-
-extension Storyboarded where Self: UIViewController {
-  func instantiate(fromStoryboard nibName:String) -> Self {
-    let id = String(describing: self)
-    let storyboard = UIStoryboard(name: nibName, bundle: Bundle.main)
-    return storyboard.instantiateViewController(withIdentifier: id) as! Self
-  }
-}

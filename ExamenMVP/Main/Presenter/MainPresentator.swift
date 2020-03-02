@@ -25,14 +25,20 @@ class MainPresentator: Presentator {
   
   func instantiate() -> UIViewController {
     let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-    let view = storyboard.instantiateViewController(withIdentifier: "MainView") as! ViewController
-    view.setup(presentator: self)
+    let view = storyboard.instantiateViewController(withIdentifier: "MainView")
+    if let presentable = view as? Presentable {
+      start(presentable: presentable)
+    }
     
     return view
   }
   
+  func start(presentable view: Presentable) {
+    view.setup(presenter: self)
+  }
+  
   //MARK:- Protocol Methods
-  func validateInput(_ input: String) {    
+  func validateInput(_ input: String) {
     if let lastInput = input.last, input.count > currentEntry.count {
       let errorMessage = checkLastInput(lastInput)
       !errorMessage.isEmpty ? processError(withErrors: errorMessage) : processSequence(input)
@@ -108,6 +114,10 @@ class MainPresentator: Presentator {
   }
   
   private func evaluateExistanceFromErase(_ remaningInput: Character) -> Bool {
+    guard currentEntry.count > 2 else {
+      return false
+      
+    } //TODO:- Validate this
     let lengthWithoutLast = currentEntry.count-3
     let c = currentEntry[...lengthWithoutLast]
     return c.contains(remaningInput)
