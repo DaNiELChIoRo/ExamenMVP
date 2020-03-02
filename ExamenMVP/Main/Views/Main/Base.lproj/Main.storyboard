@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainView" id="BYZ-38-t0r" customClass="ViewController" customModule="ExamenMVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="reA-7I-y54" customClass="CustomTextField" customModule="ExamenMVP" customModuleProvider="target">
+                                <rect key="frame" x="75" y="264" width="264" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="WvL-Fw-rko"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong Entry!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rne-FG-QyL">
+                                <rect key="frame" x="75" y="317" width="264" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="X44-RO-iDW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Processed Set:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C97-Nu-sGM">
+                                <rect key="frame" x="75" y="350" width="270" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="X1F-91-Xpg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjm-6r-kxj">
+                                <rect key="frame" x="75" y="379" width="264" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7mM-VK-g3o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4r-5M-x59">
+                                <rect key="frame" x="75" y="107" width="264" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="p9v-fy-PMN"/>
+                                </constraints>
+                                <string key="text">This App let you know if the input numbers are valid. The rules are the follow: It has to be a number, the next number should not preced of be the next of the inmidate entered nor already been in the sequence</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="reA-7I-y54" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1iO-rB-dtP"/>
+                            <constraint firstItem="reA-7I-y54" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="DB8-UI-i3B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C97-Nu-sGM" secondAttribute="trailing" constant="69" id="Fbc-ue-I3s"/>
+                            <constraint firstItem="hjm-6r-kxj" firstAttribute="top" secondItem="C97-Nu-sGM" secondAttribute="bottom" constant="8" id="I4q-md-p8e"/>
+                            <constraint firstItem="rne-FG-QyL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="Jz1-pU-E9i"/>
+                            <constraint firstItem="hjm-6r-kxj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="KuP-G5-bnH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hjm-6r-kxj" secondAttribute="trailing" constant="75" id="QHT-4J-PUU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g4r-5M-x59" secondAttribute="trailing" constant="75" id="Sot-Sn-eUW"/>
+                            <constraint firstItem="reA-7I-y54" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="TQv-MX-67q"/>
+                            <constraint firstItem="C97-Nu-sGM" firstAttribute="top" secondItem="rne-FG-QyL" secondAttribute="bottom" constant="8" id="ULC-EE-Tg1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="reA-7I-y54" secondAttribute="trailing" constant="75" id="Y0x-0p-t7N"/>
+                            <constraint firstItem="reA-7I-y54" firstAttribute="top" secondItem="g4r-5M-x59" secondAttribute="bottom" constant="8" id="c0g-ob-Ait"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rne-FG-QyL" secondAttribute="trailing" constant="75" id="ePw-c4-c5O"/>
+                            <constraint firstItem="C97-Nu-sGM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="fm8-tm-jhO"/>
+                            <constraint firstItem="reA-7I-y54" firstAttribute="top" secondItem="g4r-5M-x59" secondAttribute="bottom" constant="8" id="lmV-ca-vNd"/>
+                            <constraint firstItem="rne-FG-QyL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="spk-nq-biP"/>
+                            <constraint firstItem="rne-FG-QyL" firstAttribute="top" secondItem="reA-7I-y54" secondAttribute="bottom" constant="8" id="w9A-XS-AWj"/>
+                            <constraint firstItem="g4r-5M-x59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="wnY-Fp-CIc"/>
+                            <constraint firstItem="g4r-5M-x59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="yIO-Z4-0Kc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g4r-5M-x59" secondAttribute="trailing" constant="75" id="z5F-Hz-cc9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="processedSequenceLabel" destination="hjm-6r-kxj" id="miq-7j-Hle"/>
+                        <outlet property="textField" destination="reA-7I-y54" id="9pr-Qy-Ty9"/>
+                        <outlet property="wrongEntryLabel" destination="rne-FG-QyL" id="P70-7Q-z6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
